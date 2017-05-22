@@ -2,8 +2,28 @@
 
 <head>
   <title>tic tac toe</title>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  
+ <script>
+  
+  var chosenSymbol = 'x' ;
+   
+   function chooseX(){
+     chosenSymbol = 'x' ;
+     //alert("chosen symbol: " + chosenSymbol);
+   }
+    function chooseO(){
+     chosenSymbol = 'o' ;
+     //alert("chosen symbol: " + chosenSymbol);
+   }
+     
+     function makeMove(divId){
+    if(document.getElementById(divid).innerHTML ==""){
+       document.getElementById(divId).innerHTML=chosenSymbol;
+    } 
+     }
+  </script>
 </head>
-
 <body>
   <div id="container">
 
@@ -14,25 +34,23 @@
     </p>
 
     <div id="tictactoe_game">
-      <input type="button" value="X" onclick="choose()" />
-      <input type="button" value="O" onlick="choose()" /> Choose X or O to start
+        <input type="button" value="X" onclick="choose()" />
+        <input type="button" value="O" onlick="choose()" /> 
+        Choose X or O to start
+         <div id="tictactoe_board" >
+        <div class="box" id="row1co11 "onclick="makeMove('row1col1')"></div>
+        <div class="box" id="row1col2" onclick="makeMove('row1col2')"></div>
+        <div class="box" id="row1col3"onclick="makeMove('row1col3')"></div>
+        <div class="box" id="row2col1"onclick="makeMove('row1col4')"></div>
+        <div class="box" id="row2col2"onclick="makeMove('row1col5')"></div>
+        <div class="box" id="row2col3"onclick="makeMove('row1col6')"></div>
+        <div class="box" id="row3col1" onclick="makeMove('row1col7')"></div>
+        <div class="box" id="row3col2"onclick="makeMove('row1col8')"></div>
+        <div class="box" id="row3col3"onclick="makeMove('row1col9')"></div>
+      </div>
     </div>
-    <div id="tictactoe_board" />
-    <div class="box" onclick="makeMove()"></div>
-    <div class="box" onclick="makeMove()"></div>
-    <div class="box" onclick="makeMove()"></div>
-    <div class="box" onclick="makeMove()"></div>
-    <div class="box" onclick="makeMove()"></div>
-    <div class="box" onclick="makeMove()"></div>
-    <div class="box" onclick="makeMove()"></div>
-    <div class="box" onclick="makeMove()"></div>
-    <div class="box" onclick="makeMove()"></div>
+
   </div>
-  </div>
-  <h1>My projects:</h1>
-  <ul>
-    <li><a href="tic tac toe.html">TicTacToe</a></li>
-  </ul>
 
 </body>
 

@@ -1,0 +1,49 @@
+body{
+  background-color :teal; 
+  color:black;
+  text-align:center;
+}
+
+#container{
+  
+  background-color:whitesmoke;
+  color:purple;
+  margin:25px;
+  padding:25px;
+  border-radius:15px;
+}
+
+img{
+  width:150px;
+ 
+}
+
+
+ul {
+  list-style-type: none;
+  
+}
+
+#tictactoe_game{
+
+  margin-left:auto;
+  margin-right:auto;
+  width:350px;
+  height:350px;
+}
+
+#tictactoe_board{
+  
+  width:350px;
+}
+.box{
+  border-style:solid;
+  float:left;
+  text-align:center;
+  line-height:100px;
+  vertical-align:middle;
+  height:100px;
+  width:100px;
+  background-color:white;
+
+}
